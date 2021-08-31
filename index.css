@@ -1,0 +1,95 @@
+/* Instructions */
+/* When clicked, the selected card should enlarge (up to you how much) and the price should have a color of #ffd60a*/
+/* The non-selected cards should reduce in opacity */
+/* Stretch goal: add a toggle to display monthly and annual prices */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+}
+
+h1,
+.tagline {
+    text-align: center;   
+}
+
+.tagline {
+    padding-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    /* background: #001d3d; */
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.card {
+    cursor: pointer;
+    color: white;
+    background-color: #003566;
+    width: 300px;
+    text-align: center;
+    margin: 1em;
+    padding: 1em 0.25em;
+    position: relative;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card ul li {
+    text-align: left;
+    padding: 0 0 1em 0.5em;
+}
+
+.card ul li:last-child {
+    padding-bottom: 5em;
+}
+
+.card-cat ul li::marker {
+    content: '🐱'
+}
+
+.card-lion ul li::marker {
+    content: '🦁'
+}
+
+.card-tiger ul li::marker {
+    content: '🐯'
+}
+
+button {
+    font-family: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    padding: 1em 2em;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    background-color: #ffd60a;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    background-color: white;
+}
+.selected{
+    transform: scale(1.3);
+    margin: 2em
+}
+.unselected{
+    color: hsl(0,0%,100%,.3)
+}
