@@ -1,5 +1,7 @@
 # Subscription pricing cards
 
+## [LIVE DEMO](https://didier187.github.io/scrimbaPricingCards/)
+
 ## focusable pricing cards
 - When you select a card 
 	- it stands out by size, light
